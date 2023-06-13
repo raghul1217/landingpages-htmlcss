@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style-type: none;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+}
+/* span{
+    color: aqua;
+} */
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 20px 0px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
+}
+.navbar ul li a:hover{
+    color: aqua;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    color: white;
+}
+.content p{
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 100;
+    line-height: 25px;
+}
+.content h1{
+    font-size: 70px;
+}
+button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 15px;
+    border: 3px solid aqua;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    color: aqua;
+}
